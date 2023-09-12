@@ -1,0 +1,9 @@
+>>{"id": 1, "method": "mining.subscribe", "params": ["GodMiner/2.0.0", null]}
+<<{"id":1,"result":[null,"1234",6],"error":null}
+<<{"id":1,"method":"mining.set_extranonce","params":["1234",6]}
+//start job sending
+>>{"id": 2, "method": "mining.extranonce.subscribe", "params": []}
+>>{"id":3,"method":"mining.authorize","params":["wallet.workername",""]}
+<<{"id":3,"result":true,"error":null}
+<<{"id":2,"method":"mining.set_difficulty","params":[1024.0]}
+
